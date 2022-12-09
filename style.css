@@ -1,7 +1,7 @@
 html body{
   padding: 0;
   margin: 0;
-  background: url("/Users/timliner/Documents/GitHub/CarApplication/img/DBHS.jpg")no-repeat;
+  background: url("https://wallpaperaccess.com/full/4893706.jpg")no-repeat;
 
   background-size: cover;
 }
@@ -59,4 +59,20 @@ html body{
 
 
 }
+.form button:hover, .form button:active, .form button:focus{
+  background-color: #06C5CF;
+  transition: all 1s ease 0s;
+}
 
+.form .message{
+  margin: 15px 0 0;
+  color: #B3B3B3;
+  font-size: 12px;
+}
+
+
+
+.form .message a{
+  color: #06C5CF;
+  text-decoration: none;
+}
