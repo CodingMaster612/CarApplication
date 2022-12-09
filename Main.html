@@ -2,39 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Dropdown Search Box</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Main.css" />
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".default_option").click(function () {
-          $(".dropdown ul").addClass("active");
-        });
 
-        $(".dropdown ul li").click(function () {
-          var text = $(this).text();
-          $(".default_option").text(text);
-          $(".dropdown ul").removeClass("active");
-        });
-      });
-    </script>
+    <title>Main menu</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="search_box">
-        <div class="dropdown">
-          <div class="default_option">All</div>
-          <ul>
-            <li>All</li>
-            <li>Recent</li>
-            <li>Popular</li>
-          </ul>
-        </div>
-        <div class="search_field">
-          <input type="text" class="input" placeholder="Search" />
-          <i class="fas fa-search"></i>
-        </div>
+    
+
+        <ul class="nav">
+          <li id="settings">
+              <a href="#"><img src="" /></a>
+          </li>
+          <li>
+              <a href="/Users/timliner/Documents/GitHub/CarApplication/Main.html">Home</a>
+          </li>
+          <li>
+              <a href="/Users/timliner/Documents/GitHub/CarApplication/Login.html">Login</a>
+          </li>
+          <li id="search">
+              <form action="" method="get">
+                  <input type="text" name="search_text" id="search_text" placeholder="Search"/>
+                  <input type="button" name="search_button" id="search_button"></a>
+              </form>
+          </li>
+          <li id="options">
+              <a href="#">Vehicles</a>
+              <ul class="subnav">
+                  <li><a href="#">Used Vehicles</a></li>
+                  <li><a href="#">New Vehicles</a></li>
+                  
+              </ul>
+          </li>
+      </ul>
+       
+
+       
+        
       </div>
     </div>
   </body>
