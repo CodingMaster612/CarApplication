@@ -2,29 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Search Box</title>
     <link rel="stylesheet" href="Main.css" />
-    <title>Main-Menu</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".default_option").click(function () {
+          $(".dropdown ul").addClass("active");
+        });
+
+        $(".dropdown ul li").click(function () {
+          var text = $(this).text();
+          $(".default_option").text(text);
+          $(".dropdown ul").removeClass("active");
+        });
+      });
+    </script>
   </head>
   <body>
-    <div class="contianer">
-      <div class="search-bar">
-        <div id="select">
-          <p>All categories</p>
-          <img src="arrow.png" />
+    <div class="wrapper">
+      <div class="search_box">
+        <div class="dropdown">
+          <div class="default_option">All</div>
           <ul>
-            <li class="options">All categories</li>
-            <li class="options">Electronics</li>
-
-            <li class="options">Furniture</li>
-
-            <li class="options">Sports</li>
-
-            <li class="options">Fashion</li>
+            <li>All</li>
+            <li>Recent</li>
+            <li>Popular</li>
           </ul>
         </div>
-        <input type="text" placeholder="Search In All Categories">
+        <div class="search_field">
+          <input type="text" class="input" placeholder="Search" />
+          <i class="fas fa-search"></i>
+        </div>
       </div>
     </div>
   </body>
