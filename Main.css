@@ -3,9 +3,11 @@ body{
   height:100vh;
   width:100vw;
   margin: 0;
+  background-image: url("https://lh3.googleusercontent.com/miUKSaTKmqRzPVXiRYyHIeJFc-1t8Sze1mArwbl3Gz4K-xR1xk5ElPwZei89iI__DXZbGqkgFM91_LBmWX3uYoWM5w=w640-h400-e365-rj-sc0x00ffffff");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
  
 * {
     margin: 0;
@@ -82,7 +84,7 @@ body{
 }
 #search_button {
   border: 0 none;
-  background: #1f7f5c url('') center no-repeat;
+  background: white url('https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-512.png') center no-repeat;
   width: 60px;
   float: left;
   padding: 0;
